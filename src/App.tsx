@@ -1,7 +1,11 @@
-import * as React from 'react';
-import './App.css';
+import * as React from "react";
+import "./App.css";
 
-import logo from './logo.svg';
+import logo from "./logo.svg";
+
+export function foo(x: string): void;
+export function foo(x: number): void;
+export function foo(x: any) {}
 
 class App extends React.Component {
   public render() {
